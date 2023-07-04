@@ -1,0 +1,107 @@
+package com.aardman.app
+{
+   import com.deeperbeige.lib3as.Sounds;
+   
+   internal class SoundLib
+   {
+       
+      
+      public function SoundLib()
+      {
+         super();
+      }
+      
+      public static function init(sounds:Sounds) : *
+      {
+         sounds.register("clatter1");
+         sounds.register("clatter2");
+         sounds.register("clatter3");
+         sounds.register("clonk1");
+         sounds.register("clunk1");
+         sounds.register("clunk2");
+         sounds.register("thud1");
+         sounds.register("thunk1");
+         sounds.register("thunk2");
+         sounds.register("thunk3");
+         sounds.register("gateopen");
+         sounds.register("rustysqueak");
+         sounds.register("switch");
+         sounds.register("pushloop",null,0);
+         sounds.register("brickloop",null,0);
+         sounds.register("atmosphere",null,0);
+         sounds.register("jumpshirley",null,1);
+         sounds.register("jumpshaun",null,1);
+         sounds.register("jumptimmy",null,1);
+         sounds.register("shirleyland",null,1);
+         sounds.register("shaunland",null,1);
+         sounds.register("timmyland",null,1);
+         sounds.register("trampolineshirley",null,0.4);
+         sounds.register("trampolineshaun",null,0.4);
+         sounds.register("trampolinetimmy",null,0.4);
+         sounds.registerGroup("clatter",["clatter1","clatter2","clatter3"]);
+         sounds.registerGroup("clunk",["clonk1","clunk1","clunk2"]);
+         sounds.registerGroup("thud",["thud1"]);
+         sounds.registerGroup("thunk",["thunk1","thunk2","thunk3"]);
+         sounds.register("fail01",null,0.5);
+         sounds.register("fail02",null,0.5);
+         sounds.register("fail03",null,0.5);
+         sounds.register("fail04",null,0.5);
+         sounds.register("fail05",null,0.5);
+         sounds.register("gamewin",null,0.5);
+         sounds.register("intro",null,0.5);
+         sounds.register("menu",null,0.5);
+         sounds.register("restart01",null,0.5);
+         sounds.register("restart02",null,0.5);
+         sounds.register("restart03",null,0.5);
+         sounds.register("restart04",null,0.5);
+         sounds.register("restart05",null,0.5);
+         sounds.register("restart06",null,0.5);
+         sounds.register("start01",null,0.5);
+         sounds.register("start02",null,0.5);
+         sounds.register("start03",null,0.5);
+         sounds.register("start04",null,0.5);
+         sounds.register("start05",null,0.5);
+         sounds.register("timed",null,0.5);
+         sounds.register("win01",null,0.5);
+         sounds.register("win02",null,0.5);
+         sounds.register("win03",null,0.5);
+         sounds.register("win04",null,0.5);
+         sounds.registerGroup("fail",["fail01","fail02","fail03","fail04","fail05"]);
+         sounds.registerGroup("restart",["restart01","restart02","restart03","restart04","restart05","restart06"]);
+         sounds.registerGroup("start",["start01","start02","start03","start04","start05"]);
+         sounds.registerGroup("win",["win01","win02","win03","win04"]);
+         sounds.registerGroup("music",["gamewin","intro","menu","timed","fail01","fail02","fail03","fail04","fail05","restart01","restart02","restart03","restart04","restart05","restart06","start01","start02","start03","start04","start05","win01","win02","win03","win04"]);
+         sounds.register("shaunwalkloop",null,1);
+         sounds.register("shaunalert01",null,1);
+         sounds.register("shaunalert02",null,1);
+         sounds.register("shaunalert03",null,1);
+         sounds.register("shirleywalkloop",null,0.5);
+         sounds.register("shirleyalert01",null,1);
+         sounds.register("shirleyalert02",null,1);
+         sounds.register("shirleyalert03",null,1);
+         sounds.register("timmywalkloop",null,1);
+         sounds.register("timmyalert01",null,1);
+         sounds.register("timmyalert02",null,1);
+         sounds.register("timmyalert03",null,1);
+         sounds.register("shirleybump01",null,1);
+         sounds.register("shirleybump02",null,1);
+         sounds.register("shirleybump03",null,1);
+         sounds.register("shaunbump01",null,1);
+         sounds.register("shaunbump02",null,1);
+         sounds.register("shaunbump03",null,1);
+         sounds.register("shaunbump04",null,1);
+         sounds.register("timmybump01",null,1);
+         sounds.register("timmybump02",null,1);
+         sounds.register("timmybump03",null,1);
+         sounds.registerGroup("shirleyalert",["shirleyalert01","shirleyalert02","shirleyalert03"]);
+         sounds.registerGroup("shaunalert",["shaunalert01","shaunalert02","shaunalert03"]);
+         sounds.registerGroup("timmyalert",["timmyalert01","timmyalert02","timmyalert03"]);
+         sounds.registerGroup("shirleybump",["shirleybump01","shirleybump02","shirleybump03"]);
+         sounds.registerGroup("shaunbump",["shaunbump01","shaunbump02","shaunbump03","shaunbump04"]);
+         sounds.registerGroup("timmybump",["timmybump01","timmybump02","timmybump03"]);
+         sounds.registerGroup("shirleyvoice",["shirleyalert01","shirleyalert02","shirleyalert03","shirleybump01","shirleybump02","shirleybump03"]);
+         sounds.registerGroup("shaunvoice",["shaunalert01","shaunalert02","shaunalert03","shaunbump01","shaunbump02","shaunbump03","shaunbump04"]);
+         sounds.registerGroup("timmyvoice",["timmyalert01","timmyalert02","timmyalert03","timmybump01","timmybump02","timmybump03"]);
+      }
+   }
+}
